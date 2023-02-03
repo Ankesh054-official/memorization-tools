@@ -11,6 +11,8 @@
 Design.
 =
 
+<img align="left" alt="GitHub" style="margin:3px;" width="100%" src="https://github.com/Ankesh054-official/memorization-tools/blob/main/src/assets/Memorization-tools.png" />
+
 
 
  
