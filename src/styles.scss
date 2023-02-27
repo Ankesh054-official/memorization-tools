@@ -1,9 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
 
-:root{
-    --bluish-color: hsl(204, 24%, 96%);
-    --dark-grey-color: hsl(208, 25%, 22%);
-    --light-grey-color: hsl(210, 22%, 91%);
-    --violet-color: hsl(273, 86%, 41%);
-    --overlay-color: hsl(208, 10%, 49%);
+:root {
+  // Colors
+  --bluish-color: hsl(204, 24%, 96%);
+  --dark-grey-color: hsl(208, 25%, 22%);
+  --light-grey-color: hsl(210, 22%, 91%);
+  --violet-color: hsl(273, 86%, 41%);
+  --overlay-color: hsl(208, 10%, 49%);
+
+  // different lengths according to viewport
+  --header-mobileView-height: 12rem;
+}
+
+.flx {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.col-cc {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-cc {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.wrap {
+    flex-wrap: wrap !important;
 }
