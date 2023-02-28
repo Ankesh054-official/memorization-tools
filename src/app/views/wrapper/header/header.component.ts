@@ -1,6 +1,8 @@
 import { ConstantPool } from '@angular/compiler';
 import { Component } from '@angular/core';
-import { environment } from 'src/environments/environment';
+
+import { ApiService } from 'src/app/services/api/api.service';
+
 
 @Component({
   selector: 'app-header',
@@ -9,12 +11,24 @@ import { environment } from 'src/environments/environment';
 })
 export class HeaderComponent {
 
-  constructor(){
+  public image: string = "";
+
+  constructor(private api: ApiService){
 
   }
 
   ngInit(){
-    console.log(environment.UNSPLESH_baseUrl);
+
+    this.api.searchImage('study').subscribe((response: any) => {
+      console.table(JSON.parse(response));
+      console.log(JSON.parse(response).results[0])
+       this.image = (JSON.parse(response).results[0]).urls.regular;
+    });
+
+  }
+
+  getimage(){
+    return "url(' " + this.image + " ')";
   }
 
 }

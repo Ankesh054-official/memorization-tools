@@ -1,6 +1,6 @@
 export const environment = {
     production: false,
-    UNSPLESH_baseUrl: process.env["UNSPLESH_baseUrl"],
-    apiKey: process.env["UNSPLESH_API_ACCESS_KEY"],
-    SECRET_KEY: process.env["UNSPLESH_API_SECRET_KEY"]
+    UNSPLESH_baseUrl: "https://api.unsplash.com/",
+    UNSPLESH_accessKey: "xAoP0nQeYZKz5snQDlmU3ffUj_dMCo0EJIFy58Hu5ro",
+    UNSPLESH_SECRET_KEY: "GROjiQYqAqW4NWUjdp7Cl2D400lHQqrZL7r4xmqGop4"
 };
