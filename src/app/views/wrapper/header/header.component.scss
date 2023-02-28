@@ -1,6 +1,19 @@
 @import "../../../../styles.scss";
 
-nav {
+.head {
   height: var(--header-mobileView-height);
+  width: var(--full-width);
   background-color: var(--bluish-color);
+
+  .brand-Title {
+    font-weight: var(--normal-hd);
+  }
+
+  .title {
+    font-size: var(--head-title-font-size);
+  }
+
+  .sub-Title {
+    font-weight: var(--normal-hd);
+  }
 }
