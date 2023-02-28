@@ -17,7 +17,7 @@ export class HeaderComponent {
 
   }
 
-  ngInit(){
+  ngOnInit(){
 
     this.api.searchImage('study').subscribe((response: any) => {
       console.table(JSON.parse(response));
