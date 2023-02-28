@@ -24,11 +24,12 @@ export class HeaderComponent {
       console.log(JSON.parse(response).results[0])
        this.image = (JSON.parse(response).results[0]).urls.regular;
     });
+    console.log("api");
 
   }
 
   getimage(){
-    return "url(' " + this.image + " ')";
+    return "url('" + this.image + "')";
   }
 
 }
