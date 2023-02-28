@@ -21,8 +21,8 @@ export class HeaderComponent {
 
     this.api.searchImage('study').subscribe((response: any) => {
       console.table(JSON.parse(response));
-      console.log(JSON.parse(response).results[0])
-       this.image = (JSON.parse(response).results[0]).urls.regular;
+      // console.log(JSON.parse(response).results[0])
+      // this.image = (JSON.parse(response).results[0]).urls.regular;
     });
     console.log("api");
 
