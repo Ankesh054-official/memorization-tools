@@ -1,6 +1,5 @@
 import { ConstantPool } from "@angular/compiler";
 import { Component, Type } from "@angular/core";
-import { type } from "os";
 
 import { ApiService } from "src/app/services/api/api.service";
 
