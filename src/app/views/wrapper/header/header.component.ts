@@ -12,6 +12,7 @@ import { ApiService } from 'src/app/services/api/api.service';
 export class HeaderComponent {
 
   public image: string = "";
+  public hasNotebook: boolean = true;
 
   constructor(private api: ApiService){
 

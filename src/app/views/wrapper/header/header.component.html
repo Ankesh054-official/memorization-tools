@@ -1,11 +1,10 @@
-<nav class="head flx col col-cc wrap" data-bs="normal-header">
+<nav class="normal-head flx col col-cc wrap" data-bs="normal-header" *ngIf="!hasNotebook">
     <h6 class="brand-Title">Memorization Tools</h6>
     <h1 class="title">CARDS</h1>
     <h5 class="sub-Title">A tool to help yourself</h5>
 </nav>
 
-<nav class="head flx col col-cc wrap" data-bs="normal-header" [style.background-image]="getimage()">
-    <h6 class="title">Notebooks</h6>
-    <h1 class="title">CARDS</h1>
+<nav class="notebook-head flx col col-cc wrap" data-bs="notebook-header" [style.background-image]="getimage()" *ngIf="hasNotebook">
+    <h1 class="title">Notebooks</h1>
     <h5 class="sub-Title">Create a notebook for grouping of cards.</h5>
 </nav>
