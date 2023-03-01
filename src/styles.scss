@@ -67,6 +67,12 @@
   flex-wrap: nowrap;
 }
 
+.col-ss{
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
 .row {
   flex-direction: row;
 }

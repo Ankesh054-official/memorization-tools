@@ -47,6 +47,7 @@
   padding: var(--normal-pd);
   color: var(--white-txt);
   background-position: center;
+  background-size: contain;
 
   .brand-Title {
     font-weight: var(--normal-hd);
@@ -57,7 +58,6 @@
   }
 
   .sub-Title {
-    font-size: var(--notebook-sub-Title);
     font-weight: var(--normal-hd);
   }
 }
