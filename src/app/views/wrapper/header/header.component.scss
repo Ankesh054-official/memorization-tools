@@ -18,7 +18,7 @@
   }
 }
 
-.notebook-head{
+.notebook-head {
   height: var(--header-mobileView-height);
   width: var(--full-width);
   background-color: var(--bluish-color);
@@ -35,12 +35,12 @@
   }
 
   .sub-Title {
-    font-size: var(--notebook-sub-Title);
+    font-size: var(--sub-Title-size);
     font-weight: var(--normal-hd);
   }
 }
 
-.all-subject-head{
+.all-subject-head {
   height: var(--header-mobileView-height);
   width: var(--full-width);
   background-color: var(--bluish-color);
@@ -60,4 +60,11 @@
   .sub-Title {
     font-weight: var(--normal-hd);
   }
+}
+
+.btn-primary-theme {
+  background-color: var(--violet-color);
+  color: var(--white-txt);
+  border-radius: 3rem;
+  font-size: var(--sub-Title-size);
 }
