@@ -13,6 +13,7 @@ import { DataManagerService } from "src/app/services/dataService/data-manager.se
 export class HeaderComponent {
   public image: string = "";
   public hasNotebook: boolean = true;
+  public headerType: string = 'all-subject';
 
   constructor(
     private api: ApiService,
@@ -37,12 +38,18 @@ export class HeaderComponent {
     });
   }
 
+
   // Decide which type of image should be in background of header.
   public get_Header_Image_Type(): string {
     // this.dataManager.getNotebooks() || 
     const list_Notebook: any = [];
 
-    const ImageType: string = list_Notebook.length == 0? "open notebook": "tags";
+    let ImageType: string = list_Notebook.length == 0? "open notebook": "tags";
+
+    if(this.headerType == 'all-subject'){
+      ImageType = "books";
+    }
+
     return ImageType;
   }
 
