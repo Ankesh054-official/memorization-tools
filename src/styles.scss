@@ -42,6 +42,7 @@
   // btn
   --btn-border-curve: 5px;
   --btn-primary-width: 10rem
+  --btn-margin-top: 1rem;
 }
 
 *{
@@ -89,4 +90,15 @@
 
 .wrap {
     flex-wrap: wrap !important;
+}
+
+.btn-primary-theme {
+  box-shadow: 0px 0px 13px var(--violet-color);
+  background-color: var(--violet-color);
+  border-radius: var(--btn-border-curve);
+  padding: calc(var(--normal-pd) - 1.2rem);
+  font-size: var(--sub-Title-size);
+  min-width: var(--btn-primary-width);
+  color: var(--white-txt);
+  border: none;
 }
