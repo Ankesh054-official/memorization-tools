@@ -8,9 +8,13 @@
   --violet-color: hsl(273, 86%, 41%);
   --overlay-color: hsl(208, 10%, 49%);
 
+  // text color
+  --white-txt: hsl(0, 0%, 100%);
+
   
   // fonts sizes
   --head-title-font-size: calc(3rem + 1.5vw);
+  --notebook-sub-Title: 1rem;
 
 
   // fonts hardness
@@ -30,6 +34,9 @@
   --header-mobileView-height: 12rem;
   --full-width: 100vw;
   --full-height: 100vh;
+
+  // padding
+  --normal-pd: 1.5rem;
 }
 
 *{
@@ -50,6 +57,12 @@
 .col-cc {
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+}
+
+.col-es{
+  justify-content: flex-end;
+  align-items: flex-start;
   flex-wrap: nowrap;
 }
 
