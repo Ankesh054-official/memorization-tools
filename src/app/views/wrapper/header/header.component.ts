@@ -20,7 +20,7 @@ export class HeaderComponent {
 
   ngOnInit(){
 
-    this.api.searchImage('study').subscribe((response: any) => {
+    this.api.searchImage('open notebook').subscribe((response: any) => {
       console.table((response));
       console.log((response).results[0])
       this.image = ((response).results[0]).urls.regular;
