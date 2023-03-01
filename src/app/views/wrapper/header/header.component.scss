@@ -63,8 +63,12 @@
 }
 
 .btn-primary-theme {
+  box-shadow: 0px 0px 16px var(--violet-color);
   background-color: var(--violet-color);
-  color: var(--white-txt);
-  border-radius: 3rem;
+  border-radius: var(--btn-border-curve);
+  padding: calc(var(--normal-pd) - 1.2rem);
   font-size: var(--sub-Title-size);
+  color: var(--white-txt);
+  border: none;
+  width: var(--btn-primary-width);
 }
