@@ -20,4 +20,9 @@ export class DataManagerService {
     return this.storageManager.store("get", 'user_platform_data', true);
   }
 
+  public getNotebooks():any{
+    // Fetch list of Notebook data.
+    return this.storageManager.store("get", "list-notebook", true);
+  }
+
 }
