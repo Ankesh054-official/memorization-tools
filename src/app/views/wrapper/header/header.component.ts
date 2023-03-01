@@ -40,7 +40,7 @@ export class HeaderComponent {
   // Decide which type of image should be in background of header.
   public get_Header_Image_Type(): string {
 
-    const list_Notebook: any = this.dataManager.getNotebooks();
+    const list_Notebook: any = this.dataManager.getNotebooks() || [];
 
     const ImageType: string = list_Notebook.length == 0? "open notebook": "tags";
     return ImageType;
