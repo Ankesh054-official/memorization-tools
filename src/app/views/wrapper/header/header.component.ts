@@ -11,8 +11,9 @@ import { DataManagerService } from "src/app/services/dataService/data-manager.se
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent {
+  public hasNotebook: boolean = false;
+  public login: boolean = false;
   public image: string = "";
-  public hasNotebook: boolean = true;
   public headerType: string = 'all-subject';
 
   constructor(
