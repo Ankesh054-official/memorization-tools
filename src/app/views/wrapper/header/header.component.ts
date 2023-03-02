@@ -14,7 +14,7 @@ export class HeaderComponent {
   public hasNotebook: boolean = false;
   public login: boolean = false;
   public image: string = "";
-  public headerType: string = 'all-subject';
+  public headerType: string = '';
 
   constructor(
     private api: ApiService,
