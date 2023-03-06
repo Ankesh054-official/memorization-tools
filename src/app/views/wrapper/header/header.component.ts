@@ -11,10 +11,10 @@ import { DataManagerService } from "src/app/services/dataService/data-manager.se
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent {
-  public hasNotebook: boolean = false;
-  public login: boolean = false;
+  public hasNotebook: boolean = true;
+  public login: boolean = true;
   public image: string = "";
-  public headerType: string = '';
+  public headerType: string = "notebook";
 
   constructor(
     private api: ApiService,
