@@ -11,18 +11,18 @@ export class DataManagerService {
 
   public storeUser(data: any){
     // Store user platform data.
-    this.storageManager.store("set", 'user_platform_data', data, true);
+    this.storageManager.store("set", true, 'user_platform_data', data);
   }
   
   
   public getUser():any{
     // Fetch user platform data.
-    return this.storageManager.store("get", 'user_platform_data', true);
+    return this.storageManager.store("get", true, 'user_platform_data');
   }
 
   public getNotebooks():any{
     // Fetch list of Notebook data.
-    return this.storageManager.store("get", "list-notebook", true);
+    return this.storageManager.store("get", true, "list-notebook");
   }
 
 }

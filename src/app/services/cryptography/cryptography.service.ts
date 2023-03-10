@@ -34,6 +34,7 @@ export class CryptographyService {
     const bytes  = CryptoJS.AES.decrypt(data, this.secret_Key);
 
     const decrypted_data = bytes.toString(CryptoJS.enc.Utf8);
+    // console.error("debugging",decrypted_data);
     return decrypted_data;
   }
 }

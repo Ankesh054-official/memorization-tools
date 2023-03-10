@@ -25,6 +25,8 @@ export class HeaderComponent {
     
     // Initlizing header image.
     this.initlize_Header_Image();
+    this.dataManager.storeUser("dev");
+    console.log(this.dataManager.getUser());
     
   }
 
