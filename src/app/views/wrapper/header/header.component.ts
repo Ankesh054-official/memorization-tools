@@ -4,6 +4,7 @@ import { Component, Type } from "@angular/core";
 import { ApiService } from "src/app/services/api/api.service";
 
 import { DataManagerService } from "src/app/services/dataService/data-manager.service";
+import { CryptographyService } from "src/app/services/cryptography/cryptography.service";
 
 @Component({
   selector: "app-header",
@@ -11,22 +12,24 @@ import { DataManagerService } from "src/app/services/dataService/data-manager.se
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent {
-  public hasNotebook: boolean = true;
-  public login: boolean = true;
+  public hasNotebook: boolean = false;
+  public login: boolean = false;
   public image: string = "";
   public headerType: string = "notebook";
 
   constructor(
     private api: ApiService,
-    private dataManager: DataManagerService
+    private dataManager: DataManagerService,
+    private enc_test: CryptographyService
   ) {}
 
   ngOnInit() {
     
     // Initlizing header image.
     this.initlize_Header_Image();
-    this.dataManager.storeUser("dev");
-    console.log(this.dataManager.getUser());
+    // this.enc_test.test("dev", "dev");
+    // this.dataManager.storeUser("dev");
+    // console.log("debugging cacheStorage data retrevial",this.dataManager.getUser());
     
   }
 

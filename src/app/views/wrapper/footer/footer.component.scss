@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--bluish-color);
+  width: var(--vp-full-width);
+  height: var(--footer-height);
+  padding: var(--normal-pd) calc(var(--normal-pd) * 2);
+
+  .credit {
+    width: fit-content;
+    font-weight: var(--normal-hd);
+    font-size: var(--fnt-dot-7);
+  }
+}

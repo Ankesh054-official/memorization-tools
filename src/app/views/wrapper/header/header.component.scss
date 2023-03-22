@@ -1,8 +1,8 @@
-@import "../../../../styles.scss";
+
 
 .normal-head {
   height: var(--header-mobileView-height);
-  width: var(--full-width);
+  width: var(--vp-full-width);
   background-color: var(--bluish-color);
 
   .brand-Title {
@@ -20,7 +20,7 @@
 
 .create-notebook-head {
   height: var(--header-mobileView-height);
-  width: var(--full-width);
+  width: var(--vp-full-width);
   background-color: var(--bluish-color);
   padding: var(--normal-pd);
   color: var(--white-txt);
@@ -42,7 +42,7 @@
 
 .all-subject-head {
   height: var(--header-mobileView-height);
-  width: var(--full-width);
+  width: var(--vp-full-width);
   background-color: var(--bluish-color);
   padding: var(--normal-pd);
   color: var(--white-txt);
