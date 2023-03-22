@@ -20,7 +20,7 @@ export class StorageManagerService {
   
   private decrypt_data(data:string = ""){
     // To decrypt data
-    console.error("debugging storage decode",data);
+
     const decrypted_data  = this.securityManager.decode(data);
     return decrypted_data;
   }
@@ -44,7 +44,6 @@ export class StorageManagerService {
 
       if(method === "set"){
         // Storing 
-        console.error("debugging storage store data",data);
         const encrypted_data = this.encrypt_data(data);
         const encrypted_Key = this.encrypt_data(key);
         this.set_Cache(encrypted_Key, encrypted_data);
@@ -54,7 +53,6 @@ export class StorageManagerService {
         // Fetching
         const ecrypted_key = this.encrypt_data(key);
         const data = this.get_Cache(ecrypted_key);
-        console.error("debugging storage store get data",ecrypted_key, data);
         return this.decrypt_data(data);
       }
       
