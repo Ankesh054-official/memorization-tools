@@ -6,15 +6,19 @@
   background-color: var(--bluish-color);
 
   .brand-Title {
-    font-weight: var(--normal-hd);
+    font-weight: var(--light-hd);
+    font-size: 0.8rem;
   }
-
+  
   .title {
-    font-size: var(--head-title-font-size);
+    // font-size: var(--head-title-font-size);
+    font-weight: var(--normal-light-hd);
+    font-size: 2.5rem;
   }
 
   .sub-Title {
-    font-weight: var(--normal-hd);
+    font-weight: var(--normal-light-hd);
+    font-size: 1.1rem;
   }
 }
 

@@ -10,7 +10,7 @@
   background-color: var(--bluish-color);
   width: var(--vp-full-width);
   height: var(--footer-height);
-  padding: var(--normal-pd) calc(var(--normal-pd) * 2);
+  padding: var(--normal-pd) calc(var(--normal-pd) * 0.5);
 
   .credit {
     width: fit-content;

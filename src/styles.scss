@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
 :root {
   // Colors
   --bluish-color: hsl(204, 24%, 96%);
@@ -10,6 +14,9 @@
 
   // text color
   --white-txt: hsl(0, 0%, 100%);
+
+  // fonts
+  --fnt-family: 'Oswald', sans-serif;
 
   // fonts sizes
   --head-title-font-size: calc(3rem + 1.5vw);
@@ -54,6 +61,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--fnt-family);
+  font-weight: var(--darkest-hd);
 }
 
 //
@@ -96,6 +105,12 @@
 
 .row-sc {
   justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.row-sbc {
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
 }
