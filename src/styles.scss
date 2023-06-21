@@ -39,7 +39,7 @@
   --darker-hd: 1000;
 
   // different lengths according to viewport
-  --header-mobileView-height: 12rem;
+  --header-mobileView-height: 18rem;
   --footer-height: 4rem;
   --vp-full-width: 100vw;
   --vp-full-height: 100vh;
@@ -134,4 +134,8 @@
 
 .dark-txt {
   color: var(--fnt-black) !important;
+}
+
+.light-txt {
+  color: var(--bluish-color) !important;
 }

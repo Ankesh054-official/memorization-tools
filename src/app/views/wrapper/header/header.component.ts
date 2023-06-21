@@ -39,9 +39,11 @@ export class HeaderComponent {
 
     const Image_Type: string = this.get_Header_Image_Type();
 
-    this.api.searchImage(Image_Type).subscribe((response: any) => {
-      this.image = response.results[0].urls.regular;
-    });
+    // this.api.searchImage(Image_Type).subscribe((response: any) => {
+    //   this.image = response.results[0].urls.regular;
+    // });
+    this.image = "./assets/demo_images/head_back.webp";
+    
   }
 
 

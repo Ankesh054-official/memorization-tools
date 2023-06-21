@@ -7,18 +7,18 @@
 
   .brand-Title {
     font-weight: var(--light-hd);
-    font-size: 0.8rem;
+    font-size: 1.8rem;
   }
   
   .title {
     // font-size: var(--head-title-font-size);
     font-weight: var(--normal-light-hd);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .sub-Title {
     font-weight: var(--normal-light-hd);
-    font-size: 1.1rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -35,11 +35,11 @@
   }
 
   .title {
-    font-size: calc(var(--head-title-font-size) - 1.5rem);
+    font-size: calc(var(--head-title-font-size) - 0.5rem);
   }
 
   .sub-Title {
-    font-size: var(--sub-Title-size);
+    font-size: calc(var(--sub-Title-size) + 1rem);
     font-weight: var(--normal-hd);
   }
 }

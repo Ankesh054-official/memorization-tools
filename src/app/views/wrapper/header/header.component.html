@@ -1,15 +1,15 @@
-<nav class="normal-head flx col col-cc wrap" data-bs="normal-header" *ngIf="!login || !hasNotebook">
+<nav class="normal-head flx col col-cc wrap" data-bs="normal-header" [ngClass]="{'dark-txt': image == '','light-txt': image != ''}" [style.background-image]="getimage()" *ngIf="!login || !hasNotebook">
     <h6 class="brand-Title">Memorization Tools</h6>
     <h1 class="title">CARDS</h1>
     <h5 class="sub-Title">A tool to help yourself</h5>
 </nav>
 
-<nav class="create-notebook-head flx col col-es wrap" [ngClass]="{'dark-txt': image == ''}" data-bs="notebook-header" [style.background-image]="getimage()" *ngIf="login && hasNotebook && headerType == 'notebook'">
+<nav class="create-notebook-head flx col col-es wrap" [ngClass]="{'dark-txt': image == '','light-txt': image != ''}" data-bs="notebook-header" [style.background-image]="getimage()" *ngIf="login && hasNotebook && headerType == 'notebook'">
     <h1 class="title">Notebooks</h1>
     <h5 class="sub-Title">Create a notebook for grouping of cards.</h5>
 </nav>
 
-<nav class="all-subject-head flx col col-ss wrap" [ngClass]="{'dark-txt': image == ''}" data-bs="all-subject-header" [style.background-image]="getimage()" *ngIf="login && headerType == 'all-subject'">
+<nav class="all-subject-head flx col col-ss wrap" [ngClass]="{'dark-txt': image == '','light-txt': image != ''}" data-bs="all-subject-header" [style.background-image]="getimage()" *ngIf="login && headerType == 'all-subject'">
     <h6 class="brand-Title">Computer Science</h6>
     <h1 class="title">All Subjects</h1>
     <h5 class="sub-Title">All Questions & Answers</h5>
