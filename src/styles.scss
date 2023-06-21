@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
 :root {
   // Colors
   --bluish-color: hsl(204, 24%, 96%);
@@ -8,9 +12,60 @@
   --violet-color: hsl(273, 86%, 41%);
   --overlay-color: hsl(208, 10%, 49%);
 
+  // text color
+  --white-txt: hsl(0, 0%, 100%);
+
+  // fonts
+  --fnt-family: 'Oswald', sans-serif;
+
+  // fonts sizes
+  --head-title-font-size: calc(3rem + 1.5vw);
+  --sub-Title-size: 1rem;
+  --fnt-dot-7: 0.8rem;
+
+  // font colors
+  --fnt-black: hsl(0, 0%, 0%);
+
+  // fonts hardness
+  --very-lightest-hd: 100;
+  --lightest-hd: 200;
+  --light-hd: 300;
+  --normal-light-hd: 400;
+  --normal-hd: 500;
+  --normal-dark-hd: 600;
+  --light-dark-hd: 700;
+  --dark-hd: 800;
+  --darkest-hd: 900;
+  --darker-hd: 1000;
+
   // different lengths according to viewport
-  --header-mobileView-height: 12rem;
+  --header-mobileView-height: 18rem;
+  --footer-height: 4rem;
+  --vp-full-width: 100vw;
+  --vp-full-height: 100vh;
+  --pe-full-width: 100%;
+  --pe-full-height: 100%;
+
+
+  // padding
+  --normal-pd: 1.5rem;
+  --center-content-pd: 2rem;
+
+  // btn
+  --btn-border-curve: 5px;
+  --btn-primary-width: 10rem;
+  --btn-mr-top: 1rem;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fnt-family);
+  font-weight: var(--darkest-hd);
+}
+
+//
 
 .flx {
   display: flex;
@@ -26,6 +81,18 @@
   flex-wrap: nowrap;
 }
 
+.col-es {
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.col-ss {
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
 .row {
   flex-direction: row;
 }
@@ -36,6 +103,39 @@
   flex-wrap: nowrap;
 }
 
+.row-sc {
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.row-sbc {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
 .wrap {
-    flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+}
+
+.btn-primary-theme {
+  box-shadow: 0px 0px 13px var(--overlay-color);
+  background-color: var(--violet-color);
+  border-radius: var(--btn-border-curve);
+  padding: calc(var(--normal-pd) - 1.2rem);
+  font-size: var(--sub-Title-size);
+  min-width: var(--btn-primary-width);
+  color: var(--white-txt);
+  border: none;
+}
+
+//
+
+.dark-txt {
+  color: var(--fnt-black) !important;
+}
+
+.light-txt {
+  color: var(--bluish-color) !important;
 }

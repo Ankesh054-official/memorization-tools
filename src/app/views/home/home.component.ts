@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  public signin: Boolean = true;
+  public signup: Boolean = false;
+
+  constructor() {
+    
+  }
+
+  public switch(){
+	  this.signin = !this.signin;
+    this.signup = !this.signup;
+	}
+
 }

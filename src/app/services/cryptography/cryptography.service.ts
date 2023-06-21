@@ -20,9 +20,14 @@ export class CryptographyService {
     this.secret_Key = JSON.stringify(user_platform_data);
   }
 
+  public test(data:string = "", data1: string = ""){
+    const enc_data = CryptoJS.AES.encrypt(data, this.secret_Key).toString();
+    const enc_data1 = CryptoJS.AES.encrypt(data1, this.secret_Key).toString();
+    console.error(data, "=" , enc_data, ",", data1 , "=" ,enc_data1, (enc_data == enc_data1));
+  }
+
   public encode(data:string){
     // To encode data using some hashing key.
-
     const encrypted_data = CryptoJS.AES.encrypt(data, this.secret_Key).toString();
     return encrypted_data;
   }

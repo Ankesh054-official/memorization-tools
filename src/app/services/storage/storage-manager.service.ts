@@ -18,34 +18,32 @@ export class StorageManagerService {
 
 
   
-  private decrypt_data(data:any = ""){
+  private decrypt_data(data:string = ""){
     // To decrypt data
 
     const decrypted_data  = this.securityManager.decode(data);
-    return JSON.parse(decrypted_data);
+    return decrypted_data;
   }
 
 
   private encrypt_data(data:any = ""){
     // To encrypt data
 
-    const parsed_data  = JSON.stringify(data);
+    const parsed_data  = data;
     return this.securityManager.encode(parsed_data);
   }
 
   
-  public store(method:string, key:string, data:any = "", secret:boolean = false){
+  public store(method:string, secret:boolean = false, key:string, data:string = ""){
     // This function is to check whether data is secret or not.
     // If it's a secret than store in Cache Storage else in Local.
 
-    
     if(secret){
       // Deal in CacheStorage
       
 
       if(method === "set"){
         // Storing 
-
         const encrypted_data = this.encrypt_data(data);
         const encrypted_Key = this.encrypt_data(key);
         this.set_Cache(encrypted_Key, encrypted_data);
@@ -53,9 +51,8 @@ export class StorageManagerService {
       
       if(method === "get"){
         // Fetching
-
-        const decrypted_key = this.decrypt_data(key);
-        const data = this.get_Cache(decrypted_key);
+        const ecrypted_key = this.encrypt_data(key);
+        const data = this.get_Cache(ecrypted_key);
         return this.decrypt_data(data);
       }
       
@@ -105,7 +102,7 @@ export class StorageManagerService {
   private get_Cache(key:string ):any{
     // To Fetch data from Cache Storage.
     
-    const data = this.cookie.get(key);;
+    const data = this.cookie.get(key);
     return data;
   }
 
